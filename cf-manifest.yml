@@ -1,0 +1,10 @@
+--- 
+applications: 
+  - 
+    buildpack: java_buildpack
+    instances: 1
+    memory: 750M
+    name: config-server
+    path: /build/libs/config-server-1.0.0.jar
+    random-route: true
+    timeout: 180

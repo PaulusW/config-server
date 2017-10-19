@@ -15,13 +15,16 @@ apply plugin: 'eclipse'
 apply plugin: 'org.springframework.boot'
 
 group = 'com.cgi'
-version = '0.0.1-SNAPSHOT'
+version = '1.0.0'
 sourceCompatibility = 1.8
 
 repositories {
 	mavenCentral()
 }
 
+jar {
+	baseName = 'config-server'
+}
 
 ext {
 	springCloudVersion = 'Dalston.SR4'
